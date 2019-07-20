@@ -8,7 +8,8 @@ services:
       - POSTGRES_DB=airflow
 
   webserver:
-    image: puckel/docker-airflow:1.10.3
+    build:
+      context: . 
     restart: always
     depends_on:
       - postgres
