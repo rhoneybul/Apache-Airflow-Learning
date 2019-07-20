@@ -23,3 +23,7 @@ from airflow.models import Variable
 
 Variable.get('<variable_name>')
 ```
+
+* Trying to use the s3 operator with the default dockerfile caused issues. Hence, I had to pull the dockerfile, and added a `pip install botocore` step into the dockerfile.
+
+
