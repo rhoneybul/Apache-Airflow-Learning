@@ -9,7 +9,7 @@ args = {
 }
 
 dag = DAG(
-    dag_id='helloworld.dag',
+    dag_id='helloworld-dag',
     default_args=args,
     schedule_interval=None
 )
