@@ -3,10 +3,7 @@ from airflow.models import DAG
 
 import datetime
 
-args = {
-    'owner': 'rhoneybul',
-    'start_date': datetime.datetime.now() - datetime.timedelta(5),
-}
+from default_args import args 
 
 def start_task():
     print('starting the task')

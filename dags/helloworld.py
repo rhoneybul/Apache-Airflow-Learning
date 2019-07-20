@@ -3,10 +3,7 @@ from airflow.operators.python_operator import PythonOperator
 
 import datetime
 
-args = {
-    'owner': 'rhoneybul',
-    'start_date': datetime.datetime.now() - datetime.timedelta(1),
-}
+from default_args import args
 
 dag = DAG(
     dag_id='helloworld-dag',
